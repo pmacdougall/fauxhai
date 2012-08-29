@@ -1,43 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Fauxhai by customink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <title>Fauxhai by customink</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">Fauxhai</h1>
-        <p class="header">Easily mock full ohai data</p>
-
-        <ul>
-          <li class="download"><a class="buttons" href="https://github.com/customink/fauxhai/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/customink/fauxhai/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/customink/fauxhai">View On GitHub</a></li>
-        </ul>
-
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/customink">customink</a></p>
-
-
-      </header>
-      <section>
+    <header>
+      <div class="inner">
         <h1>Fauxhai</h1>
+        <h2>Easily mock full ohai data</h2>
+        <a href="https://github.com/customink/fauxhai" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>Fauxhai</h1>
 
 <p>Fauxhai is a gem for mocking out <a href="https://github.com/opscode/ohai">ohai</a> data in your chef testing. Fauxhai is community supported, so we need <strong>your help</strong> to populate our dataset. Here's an example for testing my "awesome_cookbook" on Ubuntu:</p>
 
-<p><strong>Fauxhai is still in alpha stages and should not be considered stable! Pull Requests and feedback are welcome :)</strong></p>
+<p>Fauxhai finally stable! Pull Requests are still welcome though :)</p>
 
-<div class="highlight">
-<pre><span class="nb">require</span> <span class="s1">'chefspec'</span>
+<div class="highlight"><pre><span class="nb">require</span> <span class="s1">'chefspec'</span>
 
 <span class="n">describe</span> <span class="s1">'awesome_cookbook::default'</span> <span class="k">do</span>
   <span class="n">before</span> <span class="k">do</span>
@@ -49,18 +46,15 @@
     <span class="vi">@runner</span><span class="o">.</span><span class="n">should</span> <span class="n">install_package</span> <span class="s1">'awesome'</span>
   <span class="k">end</span>
 <span class="k">end</span>
-</pre>
-</div>
-
+</pre></div>
 
 <p>Alternatively, you can pull "real" ohai data from an existing server:</p>
 
-<div class="highlight">
-<pre><span class="nb">require</span> <span class="s1">'chefspec'</span>
+<div class="highlight"><pre><span class="nb">require</span> <span class="s1">'chefspec'</span>
 
 <span class="n">describe</span> <span class="s1">'awesome_cookbook::default'</span> <span class="k">do</span>
   <span class="n">before</span> <span class="k">do</span>
-    <span class="no">Fauxhai</span><span class="o">.</span><span class="n">mock</span><span class="p">(</span><span class="n">url</span><span class="ss">:'server01.example.com'</span><span class="p">)</span>
+    <span class="no">Fauxhai</span><span class="o">.</span><span class="n">fetch</span><span class="p">(</span><span class="n">host</span><span class="ss">:'server01.example.com'</span><span class="p">)</span>
   <span class="k">end</span>
 
   <span class="n">it</span> <span class="s1">'should install awesome'</span> <span class="k">do</span>
@@ -68,9 +62,7 @@
     <span class="vi">@runner</span><span class="o">.</span><span class="n">should</span> <span class="n">install_package</span> <span class="s1">'awesome'</span>
   <span class="k">end</span>
 <span class="k">end</span>
-</pre>
-</div>
-
+</pre></div>
 
 <p>Fauxhai supports <a href="https://github.com/acrmp/chefspec">ChefSpec</a> and <a href="https://github.com/calavera/rspec-chef">rspec-chef</a>. In order to prevent polluting the README, only ChefSpec examples will be provided. However, there is an extensive README for each testing framework in the <a href="https://github.com/customink/fauxhai/tree/master/examples">examples</a> directory.</p>
 
@@ -93,8 +85,7 @@
 
 <p><code>Fauxhai.mock</code> will also accept a block with override attributes that are merged with all the default attributes. For example, the default Ubutnu 12.04 mock uses <code>Ruby 1.9.3</code>. Maybe your system is using <code>ree</code>, and you want to verify that the cookbooks work with that data as well:</p>
 
-<div class="highlight">
-<pre><span class="nb">require</span> <span class="s1">'chefspec'</span>
+<div class="highlight"><pre><span class="nb">require</span> <span class="s1">'chefspec'</span>
 
 <span class="n">describe</span> <span class="s1">'awesome_cookbook::default'</span> <span class="k">do</span>
   <span class="n">before</span> <span class="k">do</span>
@@ -108,9 +99,7 @@
     <span class="vi">@runner</span><span class="o">.</span><span class="n">should</span> <span class="n">install_package</span> <span class="s1">'awesome'</span>
   <span class="k">end</span>
 <span class="k">end</span>
-</pre>
-</div>
-
+</pre></div>
 
 <p>The <code>node</code> block variable allows you to set any Ohai attribute on the mock that you want. This provides an easy way to manage your environments. If you find that you are overridding attributes like OS or platform, you should see the section on Contributing.</p>
 
@@ -118,12 +107,15 @@
 
 <p>Alternatively, if you do not want to mock the data, Fauxhai provides a <code>fetch</code> mechanism for collecting "real" ohai data from a remote server or local file. Maybe you want to test against the fully-replicated environment for a front-facing server in your pool. Just pass in the <code>url</code> option instead of a <code>platform</code>:</p>
 
-<div class="highlight">
-<pre><span class="nb">require</span> <span class="s1">'chefspec'</span>
+<p>The <code>fetch</code> method supports all the same options as the Net-SSH command, such as <code>:user</code>, <code>:password</code>, <code>:key_file</code>, etc.</p>
+
+<p>The <code>fetch</code> method will cache the JSON file in a temporary path on your local machine. Similar to gems like VCR, this allows fauxhai to use the cached copy, making your test suite run faster. You can optionally force a cache miss by passing the <code>:force_cache_miss =&gt; true</code> option to the <code>fetch</code> initializer. <strong>Because this is real data, there may be a security concern. Secure your laptop accordingly.</strong></p>
+
+<div class="highlight"><pre><span class="nb">require</span> <span class="s1">'chefspec'</span>
 
 <span class="n">describe</span> <span class="s1">'awesome_cookbook::default'</span> <span class="k">do</span>
   <span class="n">before</span> <span class="k">do</span>
-    <span class="no">Fauxhai</span><span class="o">.</span><span class="n">mock</span><span class="p">(</span><span class="n">url</span><span class="ss">:'server01.example.com'</span><span class="p">)</span>
+    <span class="no">Fauxhai</span><span class="o">.</span><span class="n">fetch</span><span class="p">(</span><span class="n">host</span><span class="ss">:'server01.example.com'</span><span class="p">)</span>
   <span class="k">end</span>
 
   <span class="n">it</span> <span class="s1">'should install awesome'</span> <span class="k">do</span>
@@ -131,9 +123,7 @@
     <span class="vi">@runner</span><span class="o">.</span><span class="n">should</span> <span class="n">install_package</span> <span class="s1">'awesome'</span>
   <span class="k">end</span>
 <span class="k">end</span>
-</pre>
-</div>
-
+</pre></div>
 
 <p>This will ssh into the machine (you must have authorization to run <code>sudo ohai</code> on that machine), download a copy of the ohai output, and optionally cache that data inside the test directory (speeding up future tests).</p>
 
@@ -141,12 +131,11 @@
 
 <p>As you might expect, you can combine overriding and fetching like so:</p>
 
-<div class="highlight">
-<pre><span class="nb">require</span> <span class="s1">'chefspec'</span>
+<div class="highlight"><pre><span class="nb">require</span> <span class="s1">'chefspec'</span>
 
 <span class="n">describe</span> <span class="s1">'awesome_cookbook::default'</span> <span class="k">do</span>
   <span class="n">before</span> <span class="k">do</span>
-    <span class="no">Fauxhai</span><span class="o">.</span><span class="n">mock</span><span class="p">(</span><span class="n">url</span><span class="ss">:'server01.example.com'</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">node</span><span class="o">|</span>
+    <span class="no">Fauxhai</span><span class="o">.</span><span class="n">fetch</span><span class="p">(</span><span class="n">host</span><span class="ss">:'server01.example.com'</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">node</span><span class="o">|</span>
       <span class="n">node</span><span class="o">[</span><span class="s1">'languages'</span><span class="o">][</span><span class="s1">'ruby'</span><span class="o">][</span><span class="s1">'version'</span><span class="o">]</span> <span class="o">=</span> <span class="s1">'ree'</span>
     <span class="k">end</span>
   <span class="k">end</span>
@@ -156,9 +145,29 @@
     <span class="vi">@runner</span><span class="o">.</span><span class="n">should</span> <span class="n">install_package</span> <span class="s1">'awesome'</span>
   <span class="k">end</span>
 <span class="k">end</span>
-</pre>
-</div>
+</pre></div>
 
+<h2>Testing Multiple Versions</h2>
+
+<p>It's a common use case to test multiple version of the same operating system. Here's a simple example to get your started. This is more rspec-related that fauxhai related, but here ya go:</p>
+
+<div class="highlight"><pre><span class="nb">require</span> <span class="s1">'chefspec'</span>
+
+<span class="n">describe</span> <span class="s1">'awesome_cookbook::default'</span> <span class="k">do</span>
+  <span class="o">[</span><span class="s1">'12.04'</span><span class="p">,</span> <span class="s1">'11.06'</span><span class="p">,</span> <span class="s1">'10.04'</span><span class="o">].</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">version</span><span class="o">|</span>
+    <span class="n">context</span> <span class="s2">"on Ubuntu </span><span class="si">#{</span><span class="n">version</span><span class="si">}</span><span class="s2">"</span> <span class="k">do</span>
+      <span class="n">before</span> <span class="k">do</span>
+        <span class="no">Fauxhai</span><span class="o">.</span><span class="n">mock</span><span class="p">(</span><span class="n">platform</span><span class="p">:</span> <span class="s1">'ubuntu'</span><span class="p">,</span> <span class="n">version</span><span class="p">:</span> <span class="n">version</span><span class="p">)</span>
+      <span class="k">end</span>
+
+      <span class="n">it</span> <span class="s1">'should install awesome'</span> <span class="k">do</span>
+        <span class="vi">@runner</span> <span class="o">=</span> <span class="no">ChefSpec</span><span class="o">::</span><span class="no">ChefRunner</span><span class="o">.</span><span class="n">new</span><span class="o">.</span><span class="n">converge</span><span class="p">(</span><span class="s1">'tmpreaper::default'</span><span class="p">)</span>
+        <span class="vi">@runner</span><span class="o">.</span><span class="n">should</span> <span class="n">install_package</span> <span class="s1">'awesome'</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre></div>
 
 <h2>Contributing</h2>
 
@@ -192,28 +201,42 @@ OSX Lion, 10.7.4            add_osx_10_7_4
 Windows XP                  add_windows_xp
 </code></pre>
 
-<p><strong>Q:</strong> Is there a reason for this super-specific naming convention?
-<strong>A:</strong> No, but it helps in tracking problems and analyzing pull requests. Ultimately it just ensures your pull request is merged as quickly as possible.</p>
+<p><strong>Q:</strong> Is there a reason for this super-specific naming convention?</p>
+
+<p><strong>A:</strong> No, but it helps in tracking problems and analyzing pull requests. Ultimately it just ensures your pull request is merged as quickly as possible.</p>
 </li>
-<li><p>Create a new json file in <code>fauxhai/[os]/[version].json</code> (e.g. <code>fauxhai/ubuntu/12_04.json</code>)</p></li>
+<li><p>Create a new json file in <code>fauxhai/platforms/[os]/[version].json</code> (e.g. <code>fauxhai/platforms/ubuntu/12.04.json</code>)</p></li>
 <li><p>Copy-paste the contents of the file from <code>Step 4</code> into this file and save</p></li>
 <li>
 <p>Verify the installation was successful by doing the following:</p>
 
 <pre><code>irb -rubygems -rfauxhai
-Fauxhai.mock('[os]', '[version') # e.g. Fauxhai.mock('ubuntu', '12.04')
+Fauxhai.mock('platform: [os], version:  [version]') # e.g. Fauxhai.mock(platform:'ubuntu', version:'12.04')
 </code></pre>
 
 <p>As long as that does not throw an error, you're good to go!</p>
 </li>
 <li><p>Submit a pull request on github</p></li>
 </ol>
-      </section>
-      <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/customink/fauxhai/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/customink/fauxhai/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/customink/fauxhai"></a> is maintained by <a href="https://github.com/customink">customink</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
-		
+
+  
   </body>
 </html>
