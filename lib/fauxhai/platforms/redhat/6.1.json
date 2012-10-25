@@ -1,0 +1,633 @@
+{
+  "keys": {
+    "ssh": {
+      "host_dsa_public": "ssh-dss AAAAB3NzaC1kc3MAAACBAJFo9BLAw4WKEs5hgipk5m423FzBsDXCZSMcC9ca/om/1VYzMqImixGe3uICDzNFUWxFoLJTQAOccyzo6MXZiQqwWJDLFi5qOSr6w2XcMyE+zd4wOyMoDiVM5fizmG8K3FzrqvGjwBcHcBdOQnavSijoj38DN25J9zhrid5BY4WlAAAAFQDxXrCyG52XCzn3FV4ej38wJBkomQAAAIBovGPJ4mP2P6BK8lHl0PPbktwQbWlpJ13oz6REJFDVcUi7vV26bX/BjQX+ohzZQzljdz1SpUbPc/8nuA4darYkVh91eBi307EN8IdxRHj2eBgp/ZG4yshIebG3WHrwJD/xUjjZ1MRfyDT1ermVi4LvjjPgWDxLZnPpMaR6S1nzgQAAAIEAj0Vd6DCWslvlsZ8+N53HWsqPi3gnx35JoLPz9Z2epkKIKqmEHav+93G3hdfztVa4I4t3phoPniQchYryF5+RNg8hqxKzjNtrIqUYCeuf2NJrksNsH7OZygPHZpqt4kTuwAGZxjxEGfAI0y8DhkU2ntp2LnzRnWH106BQBCmcXwo= fauxhai.local",
+      "host_rsa_public": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCtLCeqtqr/HbnORckw1ukdLhpfGoOPFi5/esKEokzTqq1gsgQ2V8emmyjfq1i6XXfRtSBxkdlHv/GWdP5wBTuE2G85MzBkVSQPvmwQN8lX/JMPEEtKXkeOo0o92/PiSmvY4eRsdF0mw40Uvg7jtE3f3fxj497kzh5fKtkrHnF4x9gXCbVdr3FqXJfggR5IJwAxToerbK7x/uRS+7YuZI9Pip3tt14nv9ezwXcuGb/tvjWOZINiFl8izVIFKi7sxfTX09p4NgamxRS7TD2Yd0jT8nEoF9UZTsgXcJ1kDSx7N7NxFfNfP6rCdOGRRz4gUhXtsUjG/XkxPeCwZ7A9VnOD fauxhai.local"
+    }
+  },
+  "dmi": {
+    "bios": {
+      "address": "0xE8000",
+      "all_records": [
+        {
+          "Runtime Size": "96 kB",
+          "record_id": "0x0000",
+          "size": "0",
+          "Version": "0.5.1",
+          "Characteristics": {
+            "BIOS characteristics not supported": null,
+            "Targeted content distribution is supported": null
+          },
+          "application_identifier": "BIOS Information",
+          "Address": "0xE8000",
+          "BIOS Revision": "1.0",
+          "Release Date": "01/01/2007",
+          "ROM Size": "64 kB",
+          "Vendor": "Seabios"
+        }
+      ],
+      "rom_size": "64 kB",
+      "version": "0.5.1",
+      "bios_revision": "1.0",
+      "release_date": "01/01/2007",
+      "vendor": "Seabios",
+      "runtime_size": "96 kB"
+    },
+    "structures": {
+      "size": "389",
+      "count": "13"
+    },
+    "system": {
+      "serial_number": "Not Specified",
+      "sku_number": "Not Specified",
+      "uuid": "AD4D150C-6A43-3B87-ABDA-7DF10872D356",
+      "all_records": [
+        {
+          "record_id": "0x0100",
+          "SKU Number": "Not Specified",
+          "Serial Number": "Not Specified",
+          "size": "1",
+          "Version": "RHEL 6.0.0 PC",
+          "Wake-up Type": "Power Switch",
+          "application_identifier": "System Information",
+          "UUID": "AD4D150C-6A43-3B87-ABDA-7DF10872D356",
+          "Family": "Red Hat Enterprise Linux",
+          "Product Name": "KVM",
+          "Manufacturer": "Red Hat"
+        }
+      ],
+      "version": "RHEL 6.0.0 PC",
+      "family": "Red Hat Enterprise Linux",
+      "manufacturer": "Red Hat",
+      "wake_up_type": "Power Switch",
+      "product_name": "KVM"
+    },
+    "chassis": {
+      "serial_number": "Not Specified",
+      "asset_tag": "Not Specified",
+      "lock": "Not Present",
+      "oem_information": "0x00000000",
+      "all_records": [
+        {
+          "Lock": "Not Present",
+          "record_id": "0x0300",
+          "Thermal State": "Safe",
+          "Asset Tag": "Not Specified",
+          "Serial Number": "Not Specified",
+          "size": "3",
+          "Version": "Not Specified",
+          "OEM Information": "0x00000000",
+          "Power Supply State": "Safe",
+          "application_identifier": "Chassis Information",
+          "Security Status": "Unknown",
+          "Manufacturer": "Red Hat",
+          "Height": "Unspecified",
+          "Boot-up State": "Safe",
+          "Number Of Power Cords": "Unspecified",
+          "Type": "Other"
+        }
+      ],
+      "version": "Not Specified",
+      "manufacturer": "Red Hat",
+      "boot_up_state": "Safe",
+      "type": "Other",
+      "thermal_state": "Safe",
+      "power_supply_state": "Safe",
+      "height": "Unspecified",
+      "number_of_power_cords": "Unspecified",
+      "security_status": "Unknown"
+    },
+    "processor": {
+      "l3_cache_handle": "Not Provided",
+      "locator": "DIMM 0",
+      "number_of_devices": "1",
+      "type_detail": "None",
+      "physical_device_handle": "0x1100",
+      "form_factor": "DIMM",
+      "size": "4096 MB",
+      "location": "Other",
+      "starting_address": "0x00100000000",
+      "bank_locator": "Not Specified",
+      "l1_cache_handle": "Not Provided",
+      "total_width": "64 bits",
+      "set": "None",
+      "max_speed": "2000 MHz",
+      "current_speed": "2000 MHz",
+      "array_handle": "0x1000",
+      "physical_array_handle": "0x1000",
+      "error_correction_type": "Multi-bit ECC",
+      "all_records": [
+        {
+          "L3 Cache Handle": "Not Provided",
+          "Status": "Populated, Enabled",
+          "Max Speed": "2000 MHz",
+          "record_id": "0x0401",
+          "Socket Designation": "CPU01",
+          "size": "4",
+          "Version": "Not Specified",
+          "L1 Cache Handle": "Not Provided",
+          "L2 Cache Handle": "Not Provided",
+          "Current Speed": "2000 MHz",
+          "External Clock": "Unknown",
+          "ID": "D3 06 00 00 FD FB 8B 07",
+          "Upgrade": "Other",
+          "Voltage": "Unknown",
+          "application_identifier": "Processor Information",
+          "Manufacturer": "Bochs",
+          "Family": "Other",
+          "Type": "Central Processor"
+        },
+        {
+          "Form Factor": "DIMM",
+          "Error Information Handle": "0x0000",
+          "L3 Cache Handle": "Not Provided",
+          "Status": "No errors detected",
+          "Max Speed": "2000 MHz",
+          "record_id": "0x0402",
+          "Total Width": "64 bits",
+          "Socket Designation": "CPU02",
+          "size": "4",
+          "Locator": "DIMM 0",
+          "Set": "None",
+          "Version": "Not Specified",
+          "Size": "4096 MB",
+          "Location": "Other",
+          "L1 Cache Handle": "Not Provided",
+          "Physical Array Handle": "0x1000",
+          "Number Of Devices": "1",
+          "L2 Cache Handle": "Not Provided",
+          "Current Speed": "2000 MHz",
+          "Partition Row Position": "1",
+          "Memory Array Mapped Address Handle": "0x1301",
+          "Type Detail": "None",
+          "External Clock": "Unknown",
+          "ID": "D3 06 00 00 FD FB 8B 07",
+          "Range Size": "512 MB",
+          "Maximum Capacity": "4 GB",
+          "Error Correction Type": "Multi-bit ECC",
+          "Upgrade": "Other",
+          "Voltage": "Unknown",
+          "application_identifier": "End Of Table",
+          "Partition Width": "0",
+          "Data Width": "64 bits",
+          "Use": "System Memory",
+          "Array Handle": "0x1000",
+          "Manufacturer": "Bochs",
+          "Family": "Other",
+          "Physical Device Handle": "0x1100",
+          "Ending Address": "0x0011FFFFFFF",
+          "Starting Address": "0x00100000000",
+          "Bank Locator": "Not Specified",
+          "Type": "RAM"
+        }
+      ],
+      "id": "D3 06 00 00 FD FB 8B 07",
+      "range_size": "512 MB",
+      "maximum_capacity": "4 GB",
+      "version": "Not Specified",
+      "external_clock": "Unknown",
+      "manufacturer": "Bochs",
+      "family": "Other",
+      "ending_address": "0x0011FFFFFFF",
+      "error_information_handle": "0x0000",
+      "partition_row_position": "1",
+      "memory_array_mapped_address_handle": "0x1301",
+      "use": "System Memory",
+      "partition_width": "0",
+      "data_width": "64 bits",
+      "l2_cache_handle": "Not Provided",
+      "upgrade": "Other",
+      "voltage": "Unknown"
+    },
+    "dmidecode_version": "2.10",
+    "smbios_version": "2.4"
+  },
+  "kernel": {
+    "modules": {
+      "virtio_blk": {
+        "size": "5692",
+        "refcount": "3"
+      },
+      "dm_mod": {
+        "size": "75539",
+        "refcount": "2"
+      },
+      "dm_mirror": {
+        "size": "14067",
+        "refcount": "0"
+      },
+      "jbd": {
+        "size": "54480",
+        "refcount": "1"
+      },
+      "fscache": {
+        "size": "46761",
+        "refcount": "1"
+      },
+      "virtio_balloon": {
+        "size": "4281",
+        "refcount": "0"
+      },
+      "virtio_net": {
+        "size": "15773",
+        "refcount": "0"
+      },
+      "dm_log": {
+        "size": "10120",
+        "refcount": "2"
+      },
+      "sunrpc": {
+        "size": "242213",
+        "refcount": "15"
+      },
+      "auth_rpcgss": {
+        "size": "44925",
+        "refcount": "1"
+      },
+      "lockd": {
+        "size": "74268",
+        "refcount": "1"
+      },
+      "virtio_ring": {
+        "size": "7169",
+        "refcount": "4"
+      },
+      "sr_mod": {
+        "size": "16194",
+        "refcount": "0"
+      },
+      "autofs4": {
+        "size": "27683",
+        "refcount": "3"
+      },
+      "virtio": {
+        "size": "4824",
+        "refcount": "4"
+      },
+      "i2c_piix4": {
+        "size": "12574",
+        "refcount": "0"
+      },
+      "nfs": {
+        "size": "379314",
+        "refcount": "1"
+      },
+      "cdrom": {
+        "size": "39769",
+        "refcount": "1"
+      },
+      "mbcache": {
+        "size": "7918",
+        "refcount": "2"
+      },
+      "i2c_core": {
+        "size": "31274",
+        "refcount": "1"
+      },
+      "microcode": {
+        "size": "112845",
+        "refcount": "0"
+      },
+      "virtio_pci": {
+        "size": "6653",
+        "refcount": "0"
+      },
+      "ata_piix": {
+        "size": "22652",
+        "refcount": "0"
+      },
+      "dm_region_hash": {
+        "size": "12136",
+        "refcount": "1"
+      },
+      "ata_generic": {
+        "size": "3611",
+        "refcount": "0"
+      },
+      "pata_acpi": {
+        "size": "3667",
+        "refcount": "0"
+      },
+      "jbd2": {
+        "size": "88800",
+        "refcount": "1"
+      },
+      "sg": {
+        "size": "30186",
+        "refcount": "0"
+      },
+      "ext3": {
+        "size": "133411",
+        "refcount": "1"
+      },
+      "ipv6": {
+        "size": "322899",
+        "refcount": "32"
+      },
+      "ext4": {
+        "size": "359703",
+        "refcount": "1"
+      },
+      "nfs_acl": {
+        "size": "2613",
+        "refcount": "1"
+      }
+    },
+    "machine": "x86_64",
+    "name": "Linux",
+    "os": "GNU/Linux",
+    "version": "#1 SMP Tue May 10 15:42:40 EDT 2011",
+    "release": "2.6.32-131.0.15.el6.x86_64"
+  },
+  "fqdn": "fauxhai.local",
+  "platform_version": "6.1",
+  "ipaddress": "10.0.0.2",
+  "filesystem": {
+    "pl1nne111.nfs.edmunds.com:/vol/lax1_homedirs/pmacdougall": {
+      "kb_size": "707788800",
+      "kb_available": "360468800",
+      "mount_options": [
+        "rw",
+        "hard",
+        "intr",
+        "proto=tcp",
+        "sloppy",
+        "addr=10.128.6.11"
+      ],
+      "fs_type": "nfs",
+      "mount": "/misc/pmacdougall",
+      "percent_used": "50%",
+      "kb_used": "347320000"
+    },
+    "/sys": {
+      "mount_options": [
+        "rw",
+        "seclabel",
+        "relatime"
+      ],
+      "fs_type": "sysfs",
+      "mount": "/sys"
+    },
+    "udev": {
+      "mount_options": [
+        "rw",
+        "seclabel",
+        "relatime",
+        "size=1952828k",
+        "nr_inodes=488207",
+        "mode=755"
+      ],
+      "fs_type": "devtmpfs",
+      "mount": "/dev"
+    },
+    "none": {
+      "mount_options": [
+        "rw"
+      ],
+      "fs_type": "binfmt_misc",
+      "mount": "/proc/sys/fs/binfmt_misc"
+    },
+    "proc": {
+      "mount_options": [
+        "rw"
+      ],
+      "fs_type": "proc",
+      "mount": "/proc"
+    },
+    "sunrpc": {
+      "mount_options": [
+        "rw"
+      ],
+      "fs_type": "rpc_pipefs",
+      "mount": "/var/lib/nfs/rpc_pipefs"
+    },
+    "/proc/bus/usb": {
+      "mount_options": [
+        "rw",
+        "relatime"
+      ],
+      "fs_type": "usbfs",
+      "mount": "/proc/bus/usb"
+    },
+    "devpts": {
+      "mount_options": [
+        "rw",
+        "gid=5",
+        "mode=620"
+      ],
+      "fs_type": "devpts",
+      "mount": "/dev/pts"
+    },
+    "/proc": {
+      "mount_options": [
+        "rw",
+        "relatime"
+      ],
+      "fs_type": "proc",
+      "mount": "/proc"
+    },
+    "rootfs": {
+      "mount_options": [
+        "rw"
+      ],
+      "fs_type": "rootfs",
+      "mount": "/"
+    },
+    "sysfs": {
+      "mount_options": [
+        "rw"
+      ],
+      "fs_type": "sysfs",
+      "mount": "/sys"
+    },
+    "ldap:ldap.vip.edmunds.com:ou=auto.storage,ou=Services,dc=edmunds,dc=com": {
+      "mount_options": [
+        "rw",
+        "relatime",
+        "fd=14",
+        "pgrp=6339",
+        "timeout=60",
+        "minproto=5",
+        "maxproto=5",
+        "indirect"
+      ],
+      "fs_type": "autofs",
+      "mount": "/storage"
+    },
+    "tmpfs": {
+      "kb_size": "1962036",
+      "kb_available": "1962036",
+      "mount_options": [
+        "rw",
+        "rootcontext=\"system_u:object_r:tmpfs_t:s0\""
+      ],
+      "fs_type": "tmpfs",
+      "mount": "/dev/shm",
+      "percent_used": "0%",
+      "kb_used": "0"
+    },
+    "/dev/vda1": {
+      "kb_size": "516040",
+      "uuid": "1c02f0e6-09b4-4a38-a2d5-4ea4b0a9c440",
+      "kb_available": "448532",
+      "mount_options": [
+        "rw"
+      ],
+      "fs_type": "ext3",
+      "mount": "/boot",
+      "percent_used": "9%",
+      "kb_used": "41296"
+    },
+    "ldap:ldap.vip.edmunds.com:ou=auto.misc,ou=Services,dc=edmunds,dc=com": {
+      "mount_options": [
+        "rw",
+        "relatime",
+        "fd=8",
+        "pgrp=6339",
+        "timeout=60",
+        "minproto=5",
+        "maxproto=5",
+        "indirect"
+      ],
+      "fs_type": "autofs",
+      "mount": "/misc"
+    },
+    "/dev/vda2": {
+      "kb_size": "9804120",
+      "uuid": "4fc0b786-d0bf-4c57-a07c-dbb84b8f4a82",
+      "kb_available": "7571096",
+      "mount_options": [
+        "rw"
+      ],
+      "fs_type": "ext4",
+      "mount": "/",
+      "percent_used": "19%",
+      "kb_used": "1735004"
+    }
+  },
+  "command": {
+    "ps": "ps -ef"
+  },
+  "counters": {
+    "network": {
+      "interfaces": {
+        "eth0": {
+          "tx": {
+            "bytes": "342",
+            "packets": "0",
+            "collisions": "0",
+            "compressed": 0,
+            "errors": "0",
+            "carrier": 0,
+            "overrun": 0,
+            "drop": 0
+          },
+          "rx": {
+            "bytes": "0",
+            "packets": "0",
+            "compressed": 0,
+            "errors": "0",
+            "overrun": 0,
+            "drop": 0,
+            "frame": 0,
+            "multicast": 0
+          }
+        }
+      }
+    }
+  },
+  "domain": "local",
+  "os": "linux",
+  "network": {
+    "eth0": {
+      "flags": [
+        "BROADCAST",
+        "MULTICAST",
+        "UP",
+        "LOWER_UP"
+      ],
+      "number": "0",
+      "addresses": {
+        "10.0.0.2": {
+          "netmask": "255.255.255.0",
+          "scope": "Global",
+          "broadcast": "10.0.0.255",
+          "prefixlen": "23",
+          "family": "inet"
+        }
+      },
+      "mtu": "1500",
+      "routes": {
+        "10.0.0.0/255": {
+          "scope": "link",
+          "src": "10.0.0.2"
+        }
+      },
+      "type": "eth",
+      "arp": {
+        "10.0.0.1": "fe:ff:ff:ff:ff:ff"
+      },
+      "encapsulation": "Ethernet",
+      "state": "up"
+    },
+    "default_interface": "eth0",
+    "default_gateway": "10.0.0.1"
+  },
+  "chef_packages": {
+    "ohai": {
+      "ohai_root": "/usr/local/gems/ohai-6.14.0/lib/ohai",
+      "version": "6.14.0"
+    },
+    "chef": {
+      "version": "10.12.0",
+      "chef_root": "/usr/local/gems/chef-10.12.0/lib"
+    }
+  },
+  "current_user": "fauxhai",
+  "ohai_time": 1351110717.66138,
+  "languages": {
+    "ruby": {
+      "target_os": "linux",
+      "bin_dir": "/usr/local/bin",
+      "host_vendor": "unknown",
+      "target_vendor": "unknown",
+      "gem_bin": "/usr/local/bin/gem",
+      "ruby_bin": "/usr/local/bin/ruby",
+      "target_cpu": "x86_64",
+      "version": "1.8.7",
+      "host_os": "linux-gnu",
+      "host_cpu": "x86_64",
+      "release_date": "2011-02-18",
+      "host": "x86_64-unknown-linux-gnu",
+      "target": "x86_64-unknown-linux-gnu",
+      "gems_dir": "/usr/local/gems",
+      "platform": "x86_64-linux"
+    }
+  },
+  "platform_family": "rhel",
+  "os_version": "2.6.32-131.0.15.el6.x86_64",
+  "hostname": "Fauxhai",
+  "uptime": "30 days 15 hours 07 minutes 30 seconds",
+  "etc": {
+    "group": {
+      "fauxhai": {
+        "gid": 0,
+        "members": [
+          "fauxhai"
+        ]
+      }
+    },
+    "passwd": {
+      "fauxhai": {
+        "dir": "/home/fauxhai",
+        "gid": 0,
+        "gecos": "Fauxhai",
+        "uid": 0,
+        "shell": "/bin/bash"
+      }
+    }
+  },
+  "macaddress": "11:11:11:11:11:11",
+  "uptime_seconds": 2646450,
+  "platform": "redhat"
+}
