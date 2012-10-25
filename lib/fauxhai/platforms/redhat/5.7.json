@@ -1,0 +1,838 @@
+{
+  "keys": {
+    "ssh": {
+      "host_dsa_public": "ssh-dss AAAAB3NzaC1kc3MAAACBAJFo9BLAw4WKEs5hgipk5m423FzBsDXCZSMcC9ca/om/1VYzMqImixGe3uICDzNFUWxFoLJTQAOccyzo6MXZiQqwWJDLFi5qOSr6w2XcMyE+zd4wOyMoDiVM5fizmG8K3FzrqvGjwBcHcBdOQnavSijoj38DN25J9zhrid5BY4WlAAAAFQDxXrCyG52XCzn3FV4ej38wJBkomQAAAIBovGPJ4mP2P6BK8lHl0PPbktwQbWlpJ13oz6REJFDVcUi7vV26bX/BjQX+ohzZQzljdz1SpUbPc/8nuA4darYkVh91eBi307EN8IdxRHj2eBgp/ZG4yshIebG3WHrwJD/xUjjZ1MRfyDT1ermVi4LvjjPgWDxLZnPpMaR6S1nzgQAAAIEAj0Vd6DCWslvlsZ8+N53HWsqPi3gnx35JoLPz9Z2epkKIKqmEHav+93G3hdfztVa4I4t3phoPniQchYryF5+RNg8hqxKzjNtrIqUYCeuf2NJrksNsH7OZygPHZpqt4kTuwAGZxjxEGfAI0y8DhkU2ntp2LnzRnWH106BQBCmcXwo= fauxhai.local",
+      "host_rsa_public": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCtLCeqtqr/HbnORckw1ukdLhpfGoOPFi5/esKEokzTqq1gsgQ2V8emmyjfq1i6XXfRtSBxkdlHv/GWdP5wBTuE2G85MzBkVSQPvmwQN8lX/JMPEEtKXkeOo0o92/PiSmvY4eRsdF0mw40Uvg7jtE3f3fxj497kzh5fKtkrHnF4x9gXCbVdr3FqXJfggR5IJwAxToerbK7x/uRS+7YuZI9Pip3tt14nv9ezwXcuGb/tvjWOZINiFl8izVIFKi7sxfTX09p4NgamxRS7TD2Yd0jT8nEoF9UZTsgXcJ1kDSx7N7NxFfNfP6rCdOGRRz4gUhXtsUjG/XkxPeCwZ7A9VnOD fauxhai.local"
+    }
+  },
+  "dmi": {
+    "bios": {
+      "address": "0xE8000",
+      "all_records": [
+        {
+          "Runtime Size": "96 kB",
+          "record_id": "0x0000",
+          "size": "0",
+          "Version": "0.5.1",
+          "Characteristics": {
+            "BIOS characteristics not supported": null,
+            "Targeted content distribution is supported": null
+          },
+          "application_identifier": "BIOS Information",
+          "Address": "0xE8000",
+          "BIOS Revision": "1.0",
+          "Release Date": "01/01/2007",
+          "ROM Size": "64 kB",
+          "Vendor": "Seabios"
+        }
+      ],
+      "rom_size": "64 kB",
+      "version": "0.5.1",
+      "bios_revision": "1.0",
+      "release_date": "01/01/2007",
+      "vendor": "Seabios",
+      "runtime_size": "96 kB"
+    },
+    "structures": {
+      "size": "306",
+      "count": "10"
+    },
+    "system": {
+      "serial_number": "Not Specified",
+      "sku_number": "Not Specified",
+      "uuid": "5356DFCF-32BF-3FC2-9805-CD011A245E98",
+      "all_records": [
+        {
+          "record_id": "0x0100",
+          "SKU Number": "Not Specified",
+          "Serial Number": "Not Specified",
+          "size": "1",
+          "Version": "RHEL 6.0.0 PC",
+          "Wake-up Type": "Power Switch",
+          "application_identifier": "System Information",
+          "UUID": "5356DFCF-32BF-3FC2-9805-CD011A245E98",
+          "Family": "Red Hat Enterprise Linux",
+          "Product Name": "KVM",
+          "Manufacturer": "Red Hat"
+        }
+      ],
+      "version": "RHEL 6.0.0 PC",
+      "family": "Red Hat Enterprise Linux",
+      "manufacturer": "Red Hat",
+      "wake_up_type": "Power Switch",
+      "product_name": "KVM"
+    },
+    "chassis": {
+      "serial_number": "Not Specified",
+      "asset_tag": "Not Specified",
+      "lock": "Not Present",
+      "oem_information": "0x00000000",
+      "all_records": [
+        {
+          "Lock": "Not Present",
+          "record_id": "0x0300",
+          "Thermal State": "Safe",
+          "Asset Tag": "Not Specified",
+          "Serial Number": "Not Specified",
+          "size": "3",
+          "Version": "Not Specified",
+          "OEM Information": "0x00000000",
+          "Power Supply State": "Safe",
+          "application_identifier": "Chassis Information",
+          "Security Status": "Unknown",
+          "Manufacturer": "Red Hat",
+          "Height": "Unspecified",
+          "Boot-up State": "Safe",
+          "Number Of Power Cords": "Unspecified",
+          "Type": "Other"
+        }
+      ],
+      "version": "Not Specified",
+      "manufacturer": "Red Hat",
+      "boot_up_state": "Safe",
+      "type": "Other",
+      "thermal_state": "Safe",
+      "power_supply_state": "Safe",
+      "height": "Unspecified",
+      "number_of_power_cords": "Unspecified",
+      "security_status": "Unknown"
+    },
+    "processor": {
+      "l3_cache_handle": "Not Provided",
+      "locator": "DIMM 0",
+      "number_of_devices": "1",
+      "type_detail": "None",
+      "physical_device_handle": "0x1100",
+      "form_factor": "DIMM",
+      "size": "2048 MB",
+      "location": "Other",
+      "starting_address": "0x00000000000",
+      "bank_locator": "Not Specified",
+      "total_width": "64 bits",
+      "socket_designation": "CPU01",
+      "set": "None",
+      "l1_cache_handle": "Not Provided",
+      "max_speed": "2000 MHz",
+      "current_speed": "2000 MHz",
+      "array_handle": "0x1000",
+      "physical_array_handle": "0x1000",
+      "error_correction_type": "Multi-bit ECC",
+      "all_records": [
+        {
+          "Form Factor": "DIMM",
+          "Error Information Handle": "0x0000",
+          "L3 Cache Handle": "Not Provided",
+          "Status": "No errors detected",
+          "Max Speed": "2000 MHz",
+          "record_id": "0x0401",
+          "Total Width": "64 bits",
+          "Socket Designation": "CPU01",
+          "size": "4",
+          "Locator": "DIMM 0",
+          "Set": "None",
+          "Version": "Not Specified",
+          "Size": "2048 MB",
+          "Location": "Other",
+          "L1 Cache Handle": "Not Provided",
+          "Physical Array Handle": "0x1000",
+          "Number Of Devices": "1",
+          "L2 Cache Handle": "Not Provided",
+          "Current Speed": "2000 MHz",
+          "Partition Row Position": "1",
+          "Memory Array Mapped Address Handle": "0x1300",
+          "Type Detail": "None",
+          "External Clock": "Unknown",
+          "ID": "D3 06 00 00 FD FB 8B 07",
+          "Range Size": "2 GB",
+          "Maximum Capacity": "2 GB",
+          "Error Correction Type": "Multi-bit ECC",
+          "Upgrade": "Other",
+          "Voltage": "Unknown",
+          "application_identifier": "End Of Table",
+          "Partition Width": "1",
+          "Data Width": "64 bits",
+          "Use": "System Memory",
+          "Array Handle": "0x1000",
+          "Manufacturer": "Bochs",
+          "Family": "Other",
+          "Physical Device Handle": "0x1100",
+          "Ending Address": "0x0007FFFFFFF",
+          "Starting Address": "0x00000000000",
+          "Bank Locator": "Not Specified",
+          "Type": "RAM"
+        }
+      ],
+      "id": "D3 06 00 00 FD FB 8B 07",
+      "range_size": "2 GB",
+      "maximum_capacity": "2 GB",
+      "version": "Not Specified",
+      "external_clock": "Unknown",
+      "manufacturer": "Bochs",
+      "family": "Other",
+      "ending_address": "0x0007FFFFFFF",
+      "type": "RAM",
+      "error_information_handle": "0x0000",
+      "partition_row_position": "1",
+      "memory_array_mapped_address_handle": "0x1300",
+      "use": "System Memory",
+      "partition_width": "1",
+      "data_width": "64 bits",
+      "status": "No errors detected",
+      "l2_cache_handle": "Not Provided",
+      "upgrade": "Other",
+      "voltage": "Unknown"
+    },
+    "dmidecode_version": "2.11",
+    "smbios_version": "2.4"
+  },
+  "kernel": {
+    "modules": {
+      "libata": {
+        "size": "208977",
+        "refcount": "1"
+      },
+      "ib_core": {
+        "size": "104901",
+        "refcount": "6"
+      },
+      "serio_raw": {
+        "size": "40517",
+        "refcount": "0"
+      },
+      "virtio": {
+        "size": "39365",
+        "refcount": "4"
+      },
+      "ib_cm": {
+        "size": "72809",
+        "refcount": "1"
+      },
+      "scsi_transport_iscsi2": {
+        "size": "73945",
+        "refcount": "8"
+      },
+      "scsi_dh": {
+        "size": "42561",
+        "refcount": "1"
+      },
+      "tpm": {
+        "size": "50273",
+        "refcount": "1"
+      },
+      "lp": {
+        "size": "47121",
+        "refcount": "0"
+      },
+      "bnx2i": {
+        "size": "77665",
+        "refcount": "0"
+      },
+      "virtio_blk": {
+        "size": "41673",
+        "refcount": "3"
+      },
+      "iscsi_tcp": {
+        "size": "50893",
+        "refcount": "0"
+      },
+      "acpi_memhotplug": {
+        "size": "40517",
+        "refcount": "0"
+      },
+      "dm_mem_cache": {
+        "size": "38977",
+        "refcount": "1"
+      },
+      "ib_addr": {
+        "size": "41673",
+        "refcount": "1"
+      },
+      "ohci_hcd": {
+        "size": "56181",
+        "refcount": "0"
+      },
+      "be2iscsi": {
+        "size": "94173",
+        "refcount": "0"
+      },
+      "cxgb3i": {
+        "size": "64849",
+        "refcount": "0"
+      },
+      "virtio_pci": {
+        "size": "41545",
+        "refcount": "0"
+      },
+      "l2cap": {
+        "size": "89537",
+        "refcount": "10"
+      },
+      "battery": {
+        "size": "43849",
+        "refcount": "0"
+      },
+      "lockd": {
+        "size": "101169",
+        "refcount": "2"
+      },
+      "ac": {
+        "size": "38729",
+        "refcount": "0"
+      },
+      "virtio_balloon": {
+        "size": "41025",
+        "refcount": "0"
+      },
+      "scsi_mod": {
+        "size": "199129",
+        "refcount": "10"
+      },
+      "cdrom": {
+        "size": "68713",
+        "refcount": "1"
+      },
+      "tpm_bios": {
+        "size": "40897",
+        "refcount": "1"
+      },
+      "libcxgbi": {
+        "size": "91597",
+        "refcount": "1"
+      },
+      "cnic": {
+        "size": "84457",
+        "refcount": "1"
+      },
+      "ib_mad": {
+        "size": "70757",
+        "refcount": "2"
+      },
+      "dm_mirror": {
+        "size": "54865",
+        "refcount": "0"
+      },
+      "nfs": {
+        "size": "292761",
+        "refcount": "1"
+      },
+      "i2c_piix4": {
+        "size": "43724",
+        "refcount": "0"
+      },
+      "dell_wmi": {
+        "size": "37601",
+        "refcount": "0"
+      },
+      "ide_cd": {
+        "size": "73825",
+        "refcount": "0"
+      },
+      "uhci_hcd": {
+        "size": "57433",
+        "refcount": "0"
+      },
+      "dm_region_hash": {
+        "size": "46145",
+        "refcount": "1"
+      },
+      "iw_cm": {
+        "size": "43465",
+        "refcount": "1"
+      },
+      "dm_message": {
+        "size": "36289",
+        "refcount": "1"
+      },
+      "parport": {
+        "size": "73165",
+        "refcount": "2"
+      },
+      "bluetooth": {
+        "size": "118725",
+        "refcount": "5"
+      },
+      "jbd": {
+        "size": "95025",
+        "refcount": "1"
+      },
+      "loop": {
+        "size": "48593",
+        "refcount": "0"
+      },
+      "parport_pc": {
+        "size": "62313",
+        "refcount": "0"
+      },
+      "sunrpc": {
+        "size": "202505",
+        "refcount": "8"
+      },
+      "xfrm_nalgo": {
+        "size": "43333",
+        "refcount": "1"
+      },
+      "rfcomm": {
+        "size": "104681",
+        "refcount": "0"
+      },
+      "ehci_hcd": {
+        "size": "66381",
+        "refcount": "0"
+      },
+      "asus_acpi": {
+        "size": "50917",
+        "refcount": "0"
+      },
+      "libiscsi_tcp": {
+        "size": "53573",
+        "refcount": "3"
+      },
+      "dm_multipath": {
+        "size": "58713",
+        "refcount": "0"
+      },
+      "ib_iser": {
+        "size": "68160",
+        "refcount": "0"
+      },
+      "wmi": {
+        "size": "41985",
+        "refcount": "1"
+      },
+      "i2c_ec": {
+        "size": "38593",
+        "refcount": "1"
+      },
+      "joydev": {
+        "size": "43969",
+        "refcount": "0"
+      },
+      "virtio_net": {
+        "size": "48449",
+        "refcount": "0"
+      },
+      "backlight": {
+        "size": "39873",
+        "refcount": "1"
+      },
+      "i2c_core": {
+        "size": "57537",
+        "refcount": "2"
+      },
+      "dm_raid45": {
+        "size": "99785",
+        "refcount": "0"
+      },
+      "sd_mod": {
+        "size": "56513",
+        "refcount": "0"
+      },
+      "hidp": {
+        "size": "83521",
+        "refcount": "2"
+      },
+      "scsi_transport_iscsi": {
+        "size": "35017",
+        "refcount": "1"
+      },
+      "jbd2": {
+        "size": "97609",
+        "refcount": "1"
+      },
+      "virtio_ring": {
+        "size": "37953",
+        "refcount": "1"
+      },
+      "crypto_api": {
+        "size": "42945",
+        "refcount": "1"
+      },
+      "nfs_acl": {
+        "size": "36673",
+        "refcount": "1"
+      },
+      "rdma_cm": {
+        "size": "68689",
+        "refcount": "1"
+      },
+      "8021q": {
+        "size": "58449",
+        "refcount": "1"
+      },
+      "sbs": {
+        "size": "49921",
+        "refcount": "0"
+      },
+      "autofs4": {
+        "size": "63049",
+        "refcount": "3"
+      },
+      "dm_mod": {
+        "size": "102289",
+        "refcount": "4"
+      },
+      "floppy": {
+        "size": "95465",
+        "refcount": "0"
+      },
+      "power_meter": {
+        "size": "47053",
+        "refcount": "0"
+      },
+      "pcspkr": {
+        "size": "36289",
+        "refcount": "0"
+      },
+      "crc16": {
+        "size": "35137",
+        "refcount": "1"
+      },
+      "ata_piix": {
+        "size": "57541",
+        "refcount": "0"
+      },
+      "libiscsi2": {
+        "size": "77765",
+        "refcount": "7"
+      },
+      "ipv6": {
+        "size": "436001",
+        "refcount": "15"
+      },
+      "video": {
+        "size": "53197",
+        "refcount": "0"
+      },
+      "cxgb3": {
+        "size": "215601",
+        "refcount": "1"
+      },
+      "button": {
+        "size": "40545",
+        "refcount": "0"
+      },
+      "dm_log": {
+        "size": "44993",
+        "refcount": "3"
+      },
+      "ext3": {
+        "size": "169937",
+        "refcount": "1"
+      },
+      "uio": {
+        "size": "45777",
+        "refcount": "1"
+      },
+      "ext4": {
+        "size": "300985",
+        "refcount": "1"
+      },
+      "hwmon": {
+        "size": "36553",
+        "refcount": "1"
+      },
+      "tpm_tis": {
+        "size": "48077",
+        "refcount": "0"
+      },
+      "ib_sa": {
+        "size": "74953",
+        "refcount": "2"
+      }
+    },
+    "machine": "x86_64",
+    "name": "Linux",
+    "os": "GNU/Linux",
+    "version": "#1 SMP Fri Jul 8 17:36:59 EDT 2011",
+    "release": "2.6.18-274.el5"
+  },
+  "fqdn": "fauxhai.local",
+  "platform_version": "5.7",
+  "ipaddress": "10.0.0.2",
+  "filesystem": {
+    "/sys": {
+      "mount_options": [
+        "rw"
+      ],
+      "fs_type": "sysfs",
+      "mount": "/sys"
+    },
+    "/dev/root": {
+      "mount_options": [
+        "rw",
+        "barrier=1",
+        "data=ordered"
+      ],
+      "fs_type": "ext4",
+      "mount": "/"
+    },
+    "none": {
+      "mount_options": [
+        "rw"
+      ],
+      "fs_type": "binfmt_misc",
+      "mount": "/proc/sys/fs/binfmt_misc"
+    },
+    "proc": {
+      "mount_options": [
+        "rw"
+      ],
+      "fs_type": "proc",
+      "mount": "/proc"
+    },
+    "sunrpc": {
+      "mount_options": [
+        "rw"
+      ],
+      "fs_type": "rpc_pipefs",
+      "mount": "/var/lib/nfs/rpc_pipefs"
+    },
+    "/proc/bus/usb": {
+      "mount_options": [
+        "rw"
+      ],
+      "fs_type": "usbfs",
+      "mount": "/proc/bus/usb"
+    },
+    "devpts": {
+      "mount_options": [
+        "rw",
+        "gid=5",
+        "mode=620"
+      ],
+      "fs_type": "devpts",
+      "mount": "/dev/pts"
+    },
+    "/proc": {
+      "mount_options": [
+        "rw"
+      ],
+      "fs_type": "proc",
+      "mount": "/proc"
+    },
+    "rootfs": {
+      "mount_options": [
+        "rw"
+      ],
+      "fs_type": "rootfs",
+      "mount": "/"
+    },
+    "sysfs": {
+      "mount_options": [
+        "rw"
+      ],
+      "fs_type": "sysfs",
+      "mount": "/sys"
+    },
+    "10.128.6.11:/vol/lax1_homedirs/pmacdougall": {
+      "kb_size": "707788800",
+      "kb_available": "360056960",
+      "mount_options": [
+        "rw",
+        "hard",
+        "intr",
+        "proto=tcp",
+        "addr=10.128.6.11"
+      ],
+      "fs_type": "nfs",
+      "mount": "/misc/pmacdougall",
+      "percent_used": "50%",
+      "kb_used": "347731840"
+    },
+    "ldap:ldap.vip.edmunds.com:ou=auto.storage,ou=Services,dc=edmunds,dc=com": {
+      "mount_options": [
+        "rw",
+        "fd=18",
+        "pgrp=5005",
+        "timeout=60",
+        "minproto=5",
+        "maxproto=5",
+        "indirect"
+      ],
+      "fs_type": "autofs",
+      "mount": "/storage"
+    },
+    "/dev": {
+      "mount_options": [
+        "rw"
+      ],
+      "fs_type": "tmpfs",
+      "mount": "/dev"
+    },
+    "tmpfs": {
+      "kb_size": "1029428",
+      "kb_available": "1029428",
+      "mount_options": [
+        "rw"
+      ],
+      "fs_type": "tmpfs",
+      "mount": "/dev/shm",
+      "percent_used": "0%",
+      "kb_used": "0"
+    },
+    "/dev/vda1": {
+      "label": "/boot",
+      "kb_size": "505604",
+      "uuid": "250bc836-ccfc-409b-b15b-2be91a147867",
+      "kb_available": "462529",
+      "mount_options": [
+        "rw"
+      ],
+      "fs_type": "ext3",
+      "mount": "/boot",
+      "percent_used": "4%",
+      "kb_used": "16971"
+    },
+    "ldap:ldap.vip.edmunds.com:ou=auto.misc,ou=Services,dc=edmunds,dc=com": {
+      "mount_options": [
+        "rw",
+        "fd=12",
+        "pgrp=5005",
+        "timeout=60",
+        "minproto=5",
+        "maxproto=5",
+        "indirect"
+      ],
+      "fs_type": "autofs",
+      "mount": "/misc"
+    },
+    "/dev/vda2": {
+      "label": "/",
+      "kb_size": "9337028",
+      "uuid": "47687bfb-d1f6-40d3-82cd-b32962e9ccfe",
+      "kb_available": "7542532",
+      "mount_options": [
+        "rw"
+      ],
+      "fs_type": "ext4",
+      "mount": "/",
+      "percent_used": "15%",
+      "kb_used": "1296484"
+    }
+  },
+  "command": {
+    "ps": "ps -ef"
+  },
+  "counters": {
+    "network": {
+      "interfaces": {
+        "eth0": {
+          "tx": {
+            "bytes": "342",
+            "packets": "0",
+            "collisions": "0",
+            "compressed": 0,
+            "errors": "0",
+            "carrier": 0,
+            "overrun": 0,
+            "drop": 0
+          },
+          "rx": {
+            "bytes": "0",
+            "packets": "0",
+            "compressed": 0,
+            "errors": "0",
+            "overrun": 0,
+            "drop": 0,
+            "frame": 0,
+            "multicast": 0
+          }
+        }
+      }
+    }
+  },
+  "domain": "local",
+  "os": "linux",
+  "network": {
+    "eth0": {
+      "flags": [
+        "BROADCAST",
+        "MULTICAST",
+        "UP",
+        "LOWER_UP"
+      ],
+      "number": "0",
+      "addresses": {
+        "10.0.0.2": {
+          "netmask": "255.255.255.0",
+          "scope": "Global",
+          "broadcast": "10.0.0.255",
+          "prefixlen": "23",
+          "family": "inet"
+        }
+      },
+      "mtu": "1500",
+      "routes": {
+        "10.0.0.0/255": {
+          "scope": "link",
+          "src": "10.0.0.2"
+        }
+      },
+      "type": "eth",
+      "arp": {
+        "10.0.0.1": "fe:ff:ff:ff:ff:ff"
+      },
+      "encapsulation": "Ethernet",
+      "state": "up"
+    },
+    "default_interface": "eth0",
+    "default_gateway": "10.0.0.1"
+  },
+  "chef_packages": {
+    "ohai": {
+      "ohai_root": "/usr/local/gems/ohai-6.14.0/lib/ohai",
+      "version": "6.14.0"
+    },
+    "chef": {
+      "version": "10.12.0",
+      "chef_root": "/usr/local/gems/chef-10.12.0/lib"
+    }
+  },
+  "current_user": "fauxhai",
+  "ohai_time": 1351182977.15623,
+  "languages": {
+    "ruby": {
+      "target_os": "linux",
+      "bin_dir": "/usr/local/bin",
+      "target_vendor": "redhat",
+      "host_vendor": "redhat",
+      "gem_bin": "/usr/local/bin/gem",
+      "target_cpu": "x86_64",
+      "ruby_bin": "/usr/local/bin/ruby",
+      "version": "1.8.7",
+      "host_os": "linux-gnu",
+      "target": "x86_64-redhat-linux-gnu",
+      "host_cpu": "x86_64",
+      "host": "x86_64-redhat-linux-gnu",
+      "release_date": "2011-02-18",
+      "gems_dir": "/usr/local/gems",
+      "platform": "x86_64-linux"
+    }
+  },
+  "platform_family": "rhel",
+  "os_version": "2.6.18-274.el5",
+  "hostname": "Fauxhai",
+  "uptime": "30 days 15 hours 07 minutes 30 seconds",
+  "etc": {
+    "group": {
+      "fauxhai": {
+        "gid": 0,
+        "members": [
+          "fauxhai"
+        ]
+      }
+    },
+    "passwd": {
+      "fauxhai": {
+        "dir": "/home/fauxhai",
+        "gid": 0,
+        "gecos": "Fauxhai",
+        "uid": 0,
+        "shell": "/bin/bash"
+      }
+    }
+  },
+  "macaddress": "11:11:11:11:11:11",
+  "uptime_seconds": 2646450,
+  "platform": "redhat"
+}
